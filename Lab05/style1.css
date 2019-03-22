@@ -1,0 +1,29 @@
+table, tr, th, td {
+  border: 1px solid black;
+}
+
+.submit {
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  /* border-spacing: 10px; */
+
+}
+
+.delete {
+  width: 15%;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+
+}
+
+.update {
+  width: 50%;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+
+}
+
+div {
+  border: 3px solid black;
+  width: 20%;
+}
