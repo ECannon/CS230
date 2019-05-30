@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js">
+
+  </script>
+  <title></title>
+</head>
+
+<body>
+
+  Credit: <a href="https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-php/">https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-php/</a>
+
+
+
+  <h2>Enter data to submit:</h2>
+  <form id="submit">
+    Name: <input type="text" name="name" value="" id="subName"><br>
+    Desc: <input type="text" name="desc" value="" id="subDesc"><br>
+    URL: <input type="text" name="url" value="" id="subUrl"><br>
+    <input type="submit" name="" id="buttonSubmit" value="Submit">
+  </form>
+  <div id="divSub">
+
+  </div>
+
+  <br><br>
+
+
+
+  <h2>Retrieve Data</h2>
+  <form id="retrieve">
+    <select id="selectRetrieve" name="choice">
+      <option>All</option>
+      <option>ID</option>
+      <option>Date</option>
+      <option>Name</option>
+      <option>Description</option>
+      <option>URL</option>
+    </select>
+    <input id="inp" type="text" name="match">
+    <input type="submit" id="buttonRetrieve" value="Retrieve" name="choice">
+  </form>
+  <div id="ret">
+
+  </div>
+
+  <br><br>
+
+
+  <h2>UPDATE</h2>
+  <form id="upd">
+    Select Identifier: <select name="selectIdentifier" id="select1">
+      <option>ID</option>
+      <option>Name</option>
+      <option>Date</option>
+      <option>URL</option>
+      <option>Description</option>
+    </select>
+    <input placeholder="enter data to match DB" id="whatToUpdate" type="text" name="inputToUpdate" value="">
+    <br>
+    Update: <select id="selects" name="selectChange">
+      <option>Name</option>
+      <option>URL</option>
+      <option>Description</option>
+    </select>
+    <input placeholder="enter data to update" id="update" type="text" name="inputToChange" value="">
+    <br>
+    <input id="buttonUpdate" type="submit" value="Submit">
+  </form>
+  <div id="divUpd">
+
+  </div>
+
+  <br><br>
+
+
+  <h2>DELETE</h2>
+  <form id="formDelete">
+    ID: <input type="text" id="deleteID"><br>
+    <input type="submit" name="" value="Delete" id="buttonDelete">
+  </form>
+  <div id="del"></div>
+
+
+
+</body>
+
+</html>
